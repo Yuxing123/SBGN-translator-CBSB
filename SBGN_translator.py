@@ -12,7 +12,7 @@ usage="usage: trranslator of PD SBGN maps"
 parser = optparse.OptionParser(usage=usage,version="%prog 1.1")
 parser.add_option("-i","--input",dest="inputfile",help='input SBGN maps',metavar="FILE")
 parser.add_option("-o","--output",dest="outputfile",help='output translation result',metavar="FILE")
-options = parser.parse_args()
+options, infiles = parser.parse_args()
 inputf=options.inputfile
 outputf=options.outputfile
 
